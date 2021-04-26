@@ -3,6 +3,8 @@
 
 Note - docker has been only setup for production enviroment, you won't see live updates on code change
 
+Access the frontend at http://localhost:3600
+
 ### Design Choices for the Project
 #### Backend
 - Everything can be done in one file, but I still organized everything nicely.
