@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+    redis:
+        image: redis
+        container_name: cache
+        expose:
+            - 6379
+            
+    backend:
+        build: ./backend
+        depends_on:
+            - redis
+        ports:
+            - 3600:3600
+        environment:
+            - NODE_ENV=production
+            - PORT=3600
+            - REDIS_URL=redis://cache
+        command: "npm start"
+    
+    frontend:
+        build: ./frontend
+        container_name: frontend
+        ports:
+            - 3500:3500
+
+    
