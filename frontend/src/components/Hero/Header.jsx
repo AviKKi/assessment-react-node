@@ -55,7 +55,7 @@ const SocialMediaIcons = props => (
     <A href='https://github.com/AviKKi'>
       <FaGithubSquare />
     </A>
-    <IGBtn style={{ stroke: "url(#blue-gradient)" }} href='instagram.com/avikki_coder/'>
+    <IGBtn style={{ stroke: "url(#blue-gradient)" }} href='https://instagram.com/avikki_coder/'>
       <FaInstagramSquare />
     </IGBtn>
     <TwitterBtn href='https://twitter.com/avikki_coder'>
